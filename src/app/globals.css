@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --theme-main: #ffffff;
+}
+
+@layer base {
+  .theme-white-outline {
+    text-shadow: var(--theme-main) 0.05rem 0.05rem 0px, var(--theme-main) -0.05rem 0.05rem 0px, var(--theme-main) 0.05rem -0.05rem 0px, var(--theme-main) -0.05rem -0.05rem 0px;
+  }
+}
