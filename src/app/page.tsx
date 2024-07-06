@@ -1,17 +1,21 @@
 // Components
 import FixedName from "./components/portfolio/FixedName";
 import SummarySection from "./components/portfolio/summary/SummarySection";
-import ExperienceCard from "./components/portfolio/experience/ExperienceCard";
+import ExperienceSection from "./components/portfolio/experience/ExperienceSection";
+import ProjectSection from "./components/portfolio/projects/ProjectSection";
 
 export default function Home() {
+
   return (
     <div className="w-full min-h-screen h-fit bg-theme-bg flex justify-center">
       <div className="w-2/3 h-auto px-[6rem] pt-[8rem] flex">
-        {/* Name Hero */}
+        {/* Name Container */}
         <FixedName />
-        {/* Content holder */}
+
+        {/* Content container */}
         <div className="w-max h-max flex justify-end">
           <div className="w-1/2 h-auto text-theme-gray flex flex-col gap-40">
+
             {/* Summary */}
             <SummarySection>
               <span className="text-theme-main">In 2015, I wrote my first ever program in Lua using ROBLOX Studio's game engine. </span>
@@ -21,22 +25,28 @@ export default function Home() {
             </SummarySection>
 
             {/* Experience */}
-            <div>
-              <h2 id="experience" className="mb-5 tracking-widest">experience</h2>
-              {/* Experience content holder */}
-              <div className="w-full h-fit flex flex-col gap-2">
-                <ExperienceCard />
-                <ExperienceCard />
-                <ExperienceCard />
-              </div>
-            </div>
+            <section>
+              <p id="experience" className="mb-5 tracking-widest">
+                <span className="text-theme-main">//</span> work experience
+              </p>
+              <ExperienceSection />
+            </section>
 
             {/* Projects */}
-            <h2 id="projects" className="mb-5 tracking-widest">projects</h2>
+            <section>
+              <p id="projects" className="mb-5 tracking-widest">
+                <span className="text-theme-main">//</span> personal work
+              </p>
+              <ProjectSection />
+            </section>
 
             {/* Contact */}
-            <h2 id="contact" className="mb-5 tracking-widest">contact</h2>
+            <section>
+              <p id="contact" className="mb-5 tracking-widest">
+                <span className="text-theme-main">//</span> contact info
+              </p>
 
+            </section>
           </div>
         </div>  
       </div>

@@ -11,7 +11,7 @@ interface SectionButtonProps {
 export default function SectionButton({ children, onClick }:SectionButtonProps) {
     return (
         <button className="group w-[10rem] flex items-center" onClick={onClick}>
-            <VscChevronRight className="group-hover:translate-x-3 group-hover:size-5 duration-300" />
+            <VscChevronRight className="group-hover:translate-x-3 duration-300" />
             <div className="h-full text-lg group-hover:font-bold group-hover:translate-x-5 group-hover:text-theme-main duration-300">{ children }</div>
         </button>
     );
