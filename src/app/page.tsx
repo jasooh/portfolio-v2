@@ -3,6 +3,7 @@ import FixedName from "./components/portfolio/FixedName";
 import SummarySection from "./components/portfolio/summary/SummarySection";
 import ExperienceSection from "./components/portfolio/experience/ExperienceSection";
 import ProjectSection from "./components/portfolio/projects/ProjectSection";
+import ContactSection from "./components/portfolio/contact/ContactSection";
 
 export default function Home() {
 
@@ -26,7 +27,7 @@ export default function Home() {
 
             {/* Experience */}
             <section>
-              <p id="experience" className="mb-5 tracking-widest">
+              <p id="experience" className="mb-20 tracking-widest">
                 <span className="text-theme-main">//</span> work experience
               </p>
               <ExperienceSection />
@@ -34,7 +35,7 @@ export default function Home() {
 
             {/* Projects */}
             <section>
-              <p id="projects" className="mb-5 tracking-widest">
+              <p id="projects" className="mb-20 tracking-widest">
                 <span className="text-theme-main">//</span> personal work
               </p>
               <ProjectSection />
@@ -42,10 +43,10 @@ export default function Home() {
 
             {/* Contact */}
             <section>
-              <p id="contact" className="mb-5 tracking-widest">
+              <p id="contact" className="mb-20 tracking-widest">
                 <span className="text-theme-main">//</span> contact info
               </p>
-
+              <ContactSection />
             </section>
           </div>
         </div>  

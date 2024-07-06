@@ -25,7 +25,7 @@ export default function ProjectSection() {
     };
 
     return (
-        <div className="w-full h-[30rem] flex justify-between">
+        <section className="w-full h-[30rem] flex justify-between">
             <button className="group p-3" onClick={prev}>
                 <VscChevronLeft color="#DCB53F" className="size-5 group-hover:-translate-x-2 duration-300"/>
             </button>
@@ -39,6 +39,6 @@ export default function ProjectSection() {
             <button className="group p-3" onClick={next}>
                 <VscChevronRight color="#DCB53F" className="size-5 group-hover:translate-x-2 duration-300"/>
             </button>
-        </div>
+        </section>
     );
 };
