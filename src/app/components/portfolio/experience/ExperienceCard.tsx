@@ -33,7 +33,7 @@ export default function ExperienceCard() {
             <h2 className="tracking-wide text-theme-main">
               Google Developer's Student Club
             </h2>
-            <h3 className="text-sm tracking-tighter font-bold">
+            <h3 className="text-sm font-bold tracking-tighter">
               Technical Co-Lead
             </h3>
             <h4 className="text-sm">2024</h4>

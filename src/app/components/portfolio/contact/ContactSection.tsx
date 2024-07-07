@@ -9,7 +9,7 @@ export default function ContactSection() {
     <section className="w-full h-fit min-h-[40rem] flex flex-col items-center rounded-md">
       <section className="flex flex-col items-center">
         <h2 className="text-3xl font-bold text-white">Justin Abuyuan</h2>
-        <header className="flex flex-row items-center gap-2 mb-5">
+        <header className="mb-5 flex flex-row items-center gap-2">
           <VscChevronRight color="#DCB53F" className="size-3" />
           <a
             className="hover:text-theme-main duration-300"
@@ -18,11 +18,11 @@ export default function ContactSection() {
             abuyuanjustin@gmail.com
           </a>
         </header>
-        <button className="flex items-center gap-3 border rounded-3xl p-4 mb-5 hover:bg-theme-main hover:border-theme-main hover:text-white hover:rounded-xl duration-300">
+        <button className="p-4 mb-5 flex items-center gap-3 border rounded-3xl hover:bg-theme-main hover:border-theme-main hover:text-white hover:rounded-xl duration-300">
           <FaPaperclip />
           <p>Resume</p>
         </button>
-        <section className="flex flex-row gap-3 mb-8">
+        <section className="mb-8 flex flex-row gap-3">
           <button>
             <FaGithub className="size-14 hover:text-theme-main duration-300" />
           </button>

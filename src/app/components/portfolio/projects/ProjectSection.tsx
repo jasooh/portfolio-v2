@@ -33,7 +33,7 @@ export default function ProjectSection() {
         />
       </button>
 
-      <div className="w-full max-w-[30rem] h-full overflow-hidden flex flex-row mx-5">
+      <div className="w-full max-w-[30rem] h-full flex flex-row mx-5 overflow-hidden">
         <ProjectCard index={index} />
         <ProjectCard index={index} />
         <ProjectCard index={index} />

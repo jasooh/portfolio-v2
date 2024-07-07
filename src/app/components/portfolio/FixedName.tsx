@@ -21,13 +21,13 @@ export default function FixedName() {
   };
 
   return (
-    <div className="w-fit h-fit text-theme-gray fixed">
+    <div className="fixed w-fit h-fit text-theme-gray">
       {/* Title tags */}
       <p className="mb-1 text-xl">Hey, I'm</p>
-      <h1 className="text-theme-bg font-black italic text-7xl theme-white-outline mb-2">
+      <h1 className="mb-2 text-theme-bg font-black italic text-7xl theme-white-outline">
         JUSTIN <br /> ABUYUAN
       </h1>
-      <h2 className=" text-lg mb-10">
+      <h2 className="mb-10 text-lg">
         Engineering Student @ the{" "}
         <span className="text-theme-main font-semibold">
           University of Waterloo
@@ -36,7 +36,7 @@ export default function FixedName() {
       </h2>
 
       {/* Changing text */}
-      <p className="text-theme-main max-w-96 mb-20">
+      <p className="max-w-96 mb-20 text-theme-main">
         i like to code stuff and build things for the internet.
       </p>
 

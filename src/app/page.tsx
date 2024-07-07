@@ -7,14 +7,14 @@ import ContactSection from "./components/portfolio/contact/ContactSection";
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen h-fit bg-theme-bg flex justify-center">
+    <div className="w-full min-h-screen h-fit flex justify-center bg-theme-bg">
       <div className="w-2/3 h-auto px-[6rem] pt-[8rem] flex">
         {/* Name Container */}
         <FixedName />
 
         {/* Content container */}
         <div className="w-max h-max flex justify-end">
-          <div className="w-1/2 h-auto text-theme-gray flex flex-col gap-40">
+          <div className="w-1/2 h-auto flex flex-col gap-40 text-theme-gray">
             {/* Summary */}
             <SummarySection>
               <span className="text-theme-main">
