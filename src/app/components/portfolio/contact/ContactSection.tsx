@@ -23,12 +23,12 @@ export default function ContactSection() {
           <p>Resume</p>
         </button>
         <section className="mb-8 flex flex-row gap-3">
-          <button>
+          <a target="_blank" href="https://github.com/jasooh">
             <FaGithub className="size-14 hover:text-theme-main duration-300" />
-          </button>
-          <button>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/justin-abuyuan">
             <FaLinkedin className="size-14 hover:text-theme-main duration-300" />
-          </button>
+          </a>
         </section>
         <section className="text-center text-sm">
           <p>

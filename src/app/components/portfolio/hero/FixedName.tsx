@@ -1,7 +1,7 @@
 "use client";
 
 // Components
-import SectionButton from "./SectionButton";
+import SectionButton from "../SectionButton";
 
 export default function FixedName() {
   // Button logic

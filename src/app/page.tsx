@@ -1,5 +1,5 @@
 // Components
-import FixedName from "./components/portfolio/FixedName";
+import FixedName from "./components/portfolio/hero/FixedName";
 import SummarySection from "./components/portfolio/summary/SummarySection";
 import ExperienceSection from "./components/portfolio/experience/ExperienceSection";
 import ProjectSection from "./components/portfolio/projects/ProjectSection";

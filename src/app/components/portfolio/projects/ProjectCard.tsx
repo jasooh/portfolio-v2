@@ -21,7 +21,7 @@ export default function ProjectCard({ index }: CardProps) {
         <h3 className="font-bold">Developer</h3>
         <h4 className="text-sm">2024</h4>
       </header>
-      <p className="text-xs">
+      <p className="">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam eum non,
         ex odio excepturi voluptatibus vel quis architecto consequuntur
         temporibus voluptatem est sapiente provident, magnam reprehenderit! Amet
