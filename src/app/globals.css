@@ -9,11 +9,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0D0D0D;
+  background: #0d0d0d;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #DCB53F;
+  background: #dcb53f;
   border-radius: 5px;
 }
 
@@ -29,6 +29,9 @@
 
 @layer base {
   .theme-white-outline {
-    text-shadow: var(--theme-main) 0.05rem 0.05rem 0px, var(--theme-main) -0.05rem 0.05rem 0px, var(--theme-main) 0.05rem -0.05rem 0px, var(--theme-main) -0.05rem -0.05rem 0px;
+    text-shadow: var(--theme-main) 0.05rem 0.05rem 0px,
+      var(--theme-main) -0.05rem 0.05rem 0px,
+      var(--theme-main) 0.05rem -0.05rem 0px,
+      var(--theme-main) -0.05rem -0.05rem 0px;
   }
 }
