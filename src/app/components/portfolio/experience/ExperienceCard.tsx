@@ -16,7 +16,7 @@ export default function ExperienceCard() {
   return (
     <article>
       <section
-        className={`w-full h-[7rem] pl-5 shadow-md flex justify-between ${
+        className={`w-full h-fit pl-5 shadow-md flex justify-between ${
           isOpen ? "rounded-t-md" : "rounded-md"
         } hover:bg-theme-gray hover:bg-opacity-10 duration-100`}
       >
@@ -41,7 +41,7 @@ export default function ExperienceCard() {
         </div>
         {/* Drop down button */}
         <button
-          className={`group w-full max-w-[2rem] h-full flex items-center justify-center ${
+          className={`group w-full max-w-[2rem] flex items-center justify-center ${
             isOpen ? "rounded-tr-md" : "rounded-r-md"
           } bg-theme-main`}
           onClick={onClickHandler}
@@ -54,7 +54,7 @@ export default function ExperienceCard() {
       </section>
       {/* Drop down content */}
       <section
-        className={`w-full rounded-b-md bg-theme-main ${
+        className={`w-full rounded-b-md bg-theme-main overflow-y-scroll xl:overflow-auto ${
           isOpen ? "opacity-100 p-3 h-[15rem]" : "h-[0rem] p-0 select-none"
         } duration-300`}
       >
