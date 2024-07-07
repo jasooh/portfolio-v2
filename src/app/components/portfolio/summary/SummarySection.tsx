@@ -5,5 +5,9 @@ interface SummaryProps {
 }
 
 export default function SummarySection({ children }: SummaryProps) {
-  return <p id="summary">{children}</p>;
+  return (
+    <p id="summary" className="w-full">
+      {children}
+    </p>
+  );
 }

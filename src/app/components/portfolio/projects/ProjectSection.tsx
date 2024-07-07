@@ -25,7 +25,7 @@ export default function ProjectSection() {
   };
 
   return (
-    <section className="w-full h-[30rem] flex justify-between">
+    <section className="w-screen h-[30rem] flex flex-row justify-between">
       <button className="group p-3" onClick={prev}>
         <VscChevronLeft
           color="#DCB53F"

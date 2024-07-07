@@ -21,10 +21,10 @@ export default function FixedName() {
   };
 
   return (
-    <div className="fixed w-fit h-fit text-theme-gray">
+    <article className="w-fit h-fit mb-20 text-theme-gray xl:fixed static">
       {/* Title tags */}
       <p className="mb-1 text-xl">Hey, I'm</p>
-      <h1 className="mb-2 text-theme-bg font-black italic text-7xl theme-white-outline">
+      <h1 className="mb-2 text-theme-bg font-black italic xl:text-7xl text-5xl theme-white-outline">
         JUSTIN <br /> ABUYUAN
       </h1>
       <h2 className="mb-10 text-lg">
@@ -47,6 +47,6 @@ export default function FixedName() {
         <SectionButton onClick={onClickProjects}>PROJECTS</SectionButton>
         <SectionButton onClick={onClickContact}>CONTACT</SectionButton>
       </div>
-    </div>
+    </article>
   );
 }

@@ -23,7 +23,7 @@ export default function ExperienceCard() {
         {/* Information */}
         <div className="py-2 flex justify items-center gap-5">
           <Image
-            className="w-[5rem] h-3/4 object-cover rounded-md"
+            className="w-[5rem] h-3/4 object-cover rounded-md xl:block hidden"
             alt="placeholder"
             width="64"
             height="64"
@@ -55,7 +55,7 @@ export default function ExperienceCard() {
       {/* Drop down content */}
       <section
         className={`w-full rounded-b-md bg-theme-main ${
-          isOpen ? "opacity-100 p-3 h-[8rem]" : "h-[0rem] p-0 select-none"
+          isOpen ? "opacity-100 p-3 h-[15rem]" : "h-[0rem] p-0 select-none"
         } duration-300`}
       >
         <p className="text-theme-bg">

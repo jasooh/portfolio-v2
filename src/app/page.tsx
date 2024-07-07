@@ -7,14 +7,14 @@ import ContactSection from "./components/portfolio/contact/ContactSection";
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen h-fit flex justify-center bg-theme-bg">
-      <div className="w-2/3 h-auto px-[6rem] pt-[8rem] flex">
+    <div className="overflow-hidden w-full min-h-screen h-fit flex justify-center bg-theme-bg">
+      <div className="w-2/3 h-auto xl:px-[6rem] pt-[8rem] flex xl:flex-row xl:items-start flex-col items-center">
         {/* Name Container */}
         <FixedName />
 
         {/* Content container */}
-        <div className="w-max h-max flex justify-end">
-          <div className="w-1/2 h-auto flex flex-col gap-40 text-theme-gray">
+        <div className="w-full h-max flex xl:justify-end justify-center">
+          <div className="xl:w-1/2 w-full h-auto flex flex-col gap-40 text-theme-gray items-center">
             {/* Summary */}
             <SummarySection>
               <span className="text-theme-main">
@@ -33,7 +33,7 @@ export default function Home() {
             </SummarySection>
 
             {/* Experience */}
-            <section>
+            <section className="w-full">
               <p id="experience" className="mb-20 tracking-widest">
                 <span className="text-theme-main">//</span> work experience
               </p>
@@ -41,15 +41,17 @@ export default function Home() {
             </section>
 
             {/* Projects */}
-            <section>
+            <section className="w-full">
               <p id="projects" className="mb-20 tracking-widest">
                 <span className="text-theme-main">//</span> personal work
               </p>
-              <ProjectSection />
+              <div className="flex justify-center">
+                <ProjectSection />
+              </div>
             </section>
 
             {/* Contact */}
-            <section>
+            <section className="w-full">
               <p id="contact" className="mb-20 tracking-widest">
                 <span className="text-theme-main">//</span> contact info
               </p>
