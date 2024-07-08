@@ -1,7 +1,6 @@
-"use client";
-
 // Components
-import SectionButton from "../SectionButton";
+import SectionButton from "./SectionButton";
+import AnimatedText from "./AnimatedText";
 
 export default function FixedName() {
   // Button logic
@@ -36,16 +35,14 @@ export default function FixedName() {
       </h2>
 
       {/* Changing text */}
-      <p className="max-w-96 mb-20 text-theme-main">
-        i like to code stuff and build things for the internet.
-      </p>
+      <AnimatedText />
 
       {/* Navigation buttons */}
       <div className="flex flex-col items-start">
-        <SectionButton onClick={onClickSummary}>SUMMARY</SectionButton>
-        <SectionButton onClick={onClickExperience}>EXPERIENCE</SectionButton>
-        <SectionButton onClick={onClickProjects}>PROJECTS</SectionButton>
-        <SectionButton onClick={onClickContact}>CONTACT</SectionButton>
+        <SectionButton sectionIndex={0} onClick={onClickSummary}>SUMMARY</SectionButton>
+        <SectionButton sectionIndex={1} onClick={onClickExperience}>EXPERIENCE</SectionButton>
+        <SectionButton sectionIndex={2} onClick={onClickProjects}>PROJECTS</SectionButton>
+        <SectionButton sectionIndex={3} onClick={onClickContact}>CONTACT</SectionButton>
       </div>
     </article>
   );

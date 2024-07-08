@@ -1,5 +1,3 @@
-"use client";
-
 // Components
 import Image from "next/image";
 import { VscChevronDown } from "react-icons/vsc";
@@ -54,7 +52,7 @@ export default function ExperienceCard() {
       </section>
       {/* Drop down content */}
       <section
-        className={`w-full rounded-b-md bg-theme-main overflow-y-scroll xl:overflow-auto ${
+        className={`w-full rounded-b-md bg-theme-main overflow-auto ${
           isOpen ? "opacity-100 p-3 h-[15rem]" : "h-[0rem] p-0 select-none"
         } duration-300`}
       >

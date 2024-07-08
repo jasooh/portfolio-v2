@@ -7,7 +7,6 @@ interface CardProps {
 }
 
 export default function ProjectCard({ index }: CardProps) {
-  const [epic, setEpic] = useState(true);
 
   return (
     <article
