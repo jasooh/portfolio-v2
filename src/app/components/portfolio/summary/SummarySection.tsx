@@ -14,7 +14,9 @@ export default function SummarySection() {
   });
 
   useEffect(() => {
-    SectionContext.setCurrentSection(0);
+    if (inView) {
+      SectionContext.setCurrentSection(0);
+    }
   }, [inView]);
 
   return (

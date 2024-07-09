@@ -18,15 +18,20 @@ export default function ContactSection() {
   const SectionContext = useSectionContext();
   const [ref, inView] = useInView({
     triggerOnce: false,
-    threshold: 1,
+    threshold: 0.5,
   });
 
   useEffect(() => {
-    SectionContext.setCurrentSection(3);
+    if (inView) {
+      SectionContext.setCurrentSection(3);
+    }
   }, [inView]);
 
   return (
-    <section ref={ref} className="w-full h-fit min-h-[40rem] flex flex-col items-center rounded-md">
+    <section
+      ref={ref}
+      className="w-full h-fit min-h-[40rem] flex flex-col items-center rounded-md"
+    >
       <section className="flex flex-col items-center">
         <h2 className="text-3xl font-bold text-white">Justin Abuyuan</h2>
         <header className="mb-5 flex flex-row items-center gap-2">

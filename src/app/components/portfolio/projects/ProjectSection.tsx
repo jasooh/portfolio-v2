@@ -21,7 +21,9 @@ export default function ProjectSection() {
   });
 
   useEffect(() => {
-    SectionContext.setCurrentSection(2);
+    if (inView) {
+      SectionContext.setCurrentSection(2);
+    }
   }, [inView]);
 
   // Data values

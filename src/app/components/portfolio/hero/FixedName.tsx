@@ -8,9 +8,7 @@ export default function FixedName() {
     document.getElementById("summary")?.scrollIntoView({ behavior: "smooth" });
   };
   const onClickExperience = () => {
-    document
-      .getElementById("experience")
-      ?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" });
   };
   const onClickProjects = () => {
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
@@ -39,10 +37,18 @@ export default function FixedName() {
 
       {/* Navigation buttons */}
       <div className="flex flex-col items-start">
-        <SectionButton sectionIndex={0} onClick={onClickSummary}>SUMMARY</SectionButton>
-        <SectionButton sectionIndex={1} onClick={onClickExperience}>EXPERIENCE</SectionButton>
-        <SectionButton sectionIndex={2} onClick={onClickProjects}>PROJECTS</SectionButton>
-        <SectionButton sectionIndex={3} onClick={onClickContact}>CONTACT</SectionButton>
+        <SectionButton sectionIndex={0} onClick={onClickSummary}>
+          SUMMARY
+        </SectionButton>
+        <SectionButton sectionIndex={1} onClick={onClickExperience}>
+          EXPERIENCE
+        </SectionButton>
+        <SectionButton sectionIndex={2} onClick={onClickProjects}>
+          PROJECTS
+        </SectionButton>
+        <SectionButton sectionIndex={3} onClick={onClickContact}>
+          CONTACT
+        </SectionButton>
       </div>
     </article>
   );

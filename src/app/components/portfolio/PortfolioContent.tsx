@@ -18,7 +18,7 @@ export default function PortfolioContent() {
 
       {/* Content container */}
       <div className="w-full h-max flex xl:justify-end justify-center">
-        <div className="xl:w-1/2 w-full h-auto flex flex-col gap-40 text-theme-gray items-center">
+        <div  className="xl:w-1/2 w-full h-auto flex flex-col gap-40 text-theme-gray items-center">
           {/* Summary */}
           <SummarySection />
 
