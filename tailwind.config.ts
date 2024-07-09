@@ -9,15 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'theme-main': '#DCB53F',
-        'theme-bg': '#0D0D0D',
-        'theme-gray': '#ABABAB'
+        "theme-main": "#DCB53F",
+        "theme-bg": "#0D0D0D",
+        "theme-gray": "#ABABAB",
       },
       fontFamily: {
-        'montserrat': ['Montserrat', 'sans-serif']
-      }
-    }
+        montserrat: ["Montserrat", "sans-serif"],
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };
 export default config;

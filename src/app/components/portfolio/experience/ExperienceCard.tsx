@@ -21,7 +21,7 @@ export default function ExperienceCard() {
         {/* Information */}
         <div className="py-2 flex justify items-center gap-5">
           <Image
-            className="w-[5rem] h-3/4 object-cover rounded-md xl:block hidden"
+            className="w-[10rem] object-cover rounded-md xl:block hidden"
             alt="placeholder"
             width="64"
             height="64"

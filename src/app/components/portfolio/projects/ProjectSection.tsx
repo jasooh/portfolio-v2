@@ -34,7 +34,6 @@ export default function ProjectSection() {
     setIndex((prevIndex) => {
       return prevIndex + 1 > totalCards ? 0 : prevIndex + 1;
     });
-    console.log(index);
   };
   const prev = () => {
     setIndex((prevIndex) => {
