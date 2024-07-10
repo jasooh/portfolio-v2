@@ -12,7 +12,7 @@ export default function ExperienceCard() {
   };
 
   return (
-    <article className="overflow-hidden relative">
+    <article className="overflow-hidden">
       <section
         className={`w-full h-fit pl-5 shadow-md flex justify-between ${
           isOpen ? "rounded-t-md" : "rounded-md"
@@ -53,10 +53,10 @@ export default function ExperienceCard() {
       {/* Drop down content */}
       <section
         className={`w-full h-fit rounded-b-md bg-theme-main overflow-auto ${
-          isOpen ? "h-[20rem] p-3 opacity-100" : "h-0 p-0 select-none"
+          isOpen ? "h-[20rem] opacity-100" : "h-0 select-none"
         } duration-300`}
       >
-        <p className="text-theme-bg">
+        <p className="text-theme-bg p-3">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et natus rem
           nobis porro ipsum ipsam eligendi, iste sapiente minima beatae
           excepturi. Inventore id autem facilis accusantium velit laudantium
