@@ -12,14 +12,14 @@ export default function ExperienceCard() {
   };
 
   return (
-    <article>
+    <article className="overflow-hidden relative">
       <section
         className={`w-full h-fit pl-5 shadow-md flex justify-between ${
           isOpen ? "rounded-t-md" : "rounded-md"
         } hover:bg-theme-gray hover:bg-opacity-10 duration-100`}
       >
         {/* Information */}
-        <div className="py-2 flex justify items-center gap-5">
+        <div className="py-2 flex justify items-center gap-5 overflow-hidden">
           <Image
             className="w-[10rem] object-cover rounded-md xl:block hidden"
             alt="placeholder"
@@ -52,8 +52,8 @@ export default function ExperienceCard() {
       </section>
       {/* Drop down content */}
       <section
-        className={`w-full rounded-b-md bg-theme-main overflow-auto ${
-          isOpen ? "opacity-100 p-3 h-[15rem]" : "h-[0rem] p-0 select-none"
+        className={`w-full h-fit rounded-b-md bg-theme-main overflow-auto ${
+          isOpen ? "h-[20rem] p-3 opacity-100" : "h-0 p-0 select-none"
         } duration-300`}
       >
         <p className="text-theme-bg">
