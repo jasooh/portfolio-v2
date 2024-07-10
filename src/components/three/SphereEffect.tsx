@@ -6,6 +6,7 @@ import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 
 export default function SphereEffect() {
+  const circleMesh = useRef<THREE.Mesh>(null!);
   const shaderRef = useRef<THREE.ShaderMaterial>(null!);
   const uniforms = useRef({
     uTime: { value: 0 },
@@ -16,14 +17,14 @@ export default function SphereEffect() {
   useFrame((state, delta) => {
     if (!shaderRef.current) return;
     shaderRef.current.uniforms.uTime.value += delta * 0.5;
+    circleMesh.current.rotation.x += delta * 0.1;
   });
 
   return (
-    <mesh>
-      <sphereGeometry args={[2.5, 40, 40]} />
+    <mesh ref={circleMesh} position={[0, -4, 0]}>
+      <sphereGeometry args={[5, 40, 40]} />
       <shaderMaterial
         wireframe
-        fog
         ref={shaderRef}
         vertexShader={vertex}
         fragmentShader={fragment}
