@@ -1,6 +1,6 @@
 // Context
 import { useEffect } from "react";
-import { useSectionContext } from "../context/SectionContext";
+import { useSectionContext } from "../../../context/SectionContext";
 
 // Typewriter
 import Typewriter from "typewriter-effect";

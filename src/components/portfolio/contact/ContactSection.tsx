@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
 // Context
-import { useSectionContext } from "../context/SectionContext";
+import { useSectionContext } from "../../../context/SectionContext";
 
 // React-intersection-observer
 import { useInView } from "react-intersection-observer";
@@ -57,7 +57,7 @@ export default function ContactSection() {
         </section>
         <section className="text-center text-sm">
           <p>
-            Built with love using <strong>Next.js</strong> and{" "}
+            Built with ❤ using <strong>Next.js</strong> and{" "}
             <strong>Tailwind CSS</strong>, and deployed on{" "}
             <strong>GitHub Pages</strong>.
           </p>

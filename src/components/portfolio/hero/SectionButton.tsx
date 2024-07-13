@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 import { VscChevronRight } from "react-icons/vsc";
 
 // Context
-import { useSectionContext } from "../context/SectionContext";
+import { useSectionContext } from "../../../context/SectionContext";
 
 interface SectionButtonProps {
   children: ReactNode;

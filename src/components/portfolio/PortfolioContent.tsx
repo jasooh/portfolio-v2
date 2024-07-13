@@ -8,17 +8,17 @@ import ProjectSection from "./projects/ProjectSection";
 import ContactSection from "./contact/ContactSection";
 
 // Context
-import { SectionProvider } from "./context/SectionContext";
+import ContextProvider from "../ContextProvider";
 
 export default function PortfolioContent() {
   return (
-    <SectionProvider>
+    <ContextProvider>
       {/* Name Container */}
       <FixedName />
 
       {/* Content container */}
       <div className="w-full h-max flex xl:justify-end justify-center">
-        <div  className="xl:w-1/2 w-full h-auto flex flex-col gap-40 text-theme-gray items-center">
+        <div className="xl:w-1/2 w-full h-auto flex flex-col gap-40 text-theme-gray items-center">
           {/* Summary */}
           <SummarySection />
 
@@ -49,6 +49,6 @@ export default function PortfolioContent() {
           </section>
         </div>
       </div>
-    </SectionProvider>
+    </ContextProvider>
   );
 }

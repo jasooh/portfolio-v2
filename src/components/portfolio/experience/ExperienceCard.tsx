@@ -52,8 +52,8 @@ export default function ExperienceCard() {
       </section>
       {/* Drop down content */}
       <section
-        className={`w-full h-fit rounded-b-md bg-theme-main overflow-auto ${
-          isOpen ? "h-[20rem] opacity-100" : "h-0 select-none"
+        className={`w-full rounded-b-md bg-theme-main overflow-auto ${
+          isOpen ? "h-[20rem]" : "h-[0rem] select-none"
         } duration-300`}
       >
         <p className="text-theme-bg p-3">

@@ -7,7 +7,7 @@ import ProjectCard from "./ProjectCard";
 import { useState, useEffect } from "react";
 
 // Context
-import { useSectionContext } from "../context/SectionContext";
+import { useSectionContext } from "../../../context/SectionContext";
 
 // React-intersection-observer
 import { useInView } from "react-intersection-observer";

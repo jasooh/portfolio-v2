@@ -1,6 +1,6 @@
 // Context
 import { useEffect } from "react";
-import { useSectionContext } from "../context/SectionContext";
+import { useSectionContext } from "../../../context/SectionContext";
 
 // React-intersection-observer
 import { useInView } from "react-intersection-observer";

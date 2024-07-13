@@ -5,7 +5,7 @@ import ExperienceCard from "./ExperienceCard";
 import { useEffect, useRef } from "react";
 
 // Context
-import { useSectionContext } from "../context/SectionContext";
+import { useSectionContext } from "../../../context/SectionContext";
 
 // React-intersection-observer
 import { useInView } from "react-intersection-observer";
