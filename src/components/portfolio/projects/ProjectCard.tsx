@@ -7,7 +7,6 @@ interface CardProps {
 }
 
 export default function ProjectCard({ index }: CardProps) {
-
   return (
     <article
       className="w-full p-5 flex flex-col items-center gap-5 rounded-md shadow-md hover:bg-theme-gray hover:bg-opacity-10 flex-shrink-0 duration-200 select-none"
