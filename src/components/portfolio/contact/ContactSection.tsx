@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 // Hooks
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 // Context
 import { useSectionContext } from "../../../context/SectionContext";

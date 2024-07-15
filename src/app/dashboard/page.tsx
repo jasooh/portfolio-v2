@@ -8,13 +8,22 @@ import ActionButton from "@/components/admin/inputs/ActionButton";
 import InputValue from "@/components/admin/inputs/InputValue";
 import { VscArrowRight } from "react-icons/vsc";
 
+// Hooks
+import { useRouter } from "next/navigation";
+
 // Context
 import { useAuthContext } from "@/context/AuthContext";
 
 export default function page() {
+  // Router hook
+  const router = useRouter();
   // Context hook
   const Authentication = useAuthContext();
   // Button logic
+  const onClick = () => {
+    console.log("work");
+    router.push("/dashboard/experiences");
+  };
 
   return (
     <Layout>
@@ -34,12 +43,9 @@ export default function page() {
             PASSWORD
           </label>
           <InputValue id="password" type="password" placeholder="Password" />
-
-          <div className="text-white mt-5">
-            <ActionButton>
-              Log-in <VscArrowRight />
-            </ActionButton>
-          </div>
+          <ActionButton className="mt-5 w-[6rem]" onClick={onClick}>
+            Log-in <VscArrowRight />
+          </ActionButton>
         </form>
       </article>
     </Layout>
